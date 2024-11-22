@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Create Account</h1>
+    <form id="createAccountForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+
+      <label for="city">City:</label>
+      <select id="city" name="city" required>
+        <option value="">Select your city</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Islamabad">Islamabad</option>
+        <option value="Faisalabad">Faisalabad</option>
+        <option value="Peshawar">Peshawar</option>
+      </select>
+
+      <button type="submit">Create Account</button>
+    </form>
+    <p id="message"></p>
+  </div>
+  <footer>
+    <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
